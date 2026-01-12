@@ -1,7 +1,7 @@
-import React from 'react';
+import react from 'react';
 
 export default function About() {
   return (
-    <div> About </div>
+    <h1>All about The Wald</h1>
   );
 }
