@@ -2,6 +2,9 @@ import react from "react";
 
 export default function Home() {
   return ( 
-    <h1>Welcome to the Wald!</h1>
-   );
+    <dib>
+      <h1>Welcome to the Wald!</h1>
+      <a href="/cabins">Get your Premium Cabin!</a>
+    </dib>
+  );
 }
