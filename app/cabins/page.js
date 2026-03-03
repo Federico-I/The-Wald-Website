@@ -1,5 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../components/Navigation';
 
 export default function page() {
-  return <h1>Cabins page</h1>;
+  return (
+    <div>
+      <Navigation />
+
+      <h1>Cabins page</h1>;
+    </div>
+  );
 }
