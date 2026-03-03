@@ -1,6 +1,9 @@
 import react from "react";
 import Navigation from "./components/Navigation";
 
+export const metadata = {
+  title: "The Wald",
+};
 
 export default function RootLayout({ children }) {
   return <html> 
