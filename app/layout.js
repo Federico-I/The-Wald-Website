@@ -7,6 +7,9 @@ export default function RootLayout({ children }) {
     <body>
       <Navigation />
       <main>{children}</main>
+      <footer>
+        Copyright by meee
+      </footer>
     </body>
   </html>
 };
