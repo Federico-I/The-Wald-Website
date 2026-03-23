@@ -8,7 +8,12 @@ export default async function page() {
   return (
     <div>
       <h1>Cabins page</h1>
-      <ul>{data.map(user=><li>{user.name}</li>)}</ul>
+
+      <ul>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }
