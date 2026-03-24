@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link";
-import Navigation from "./components/Navigation";
+import Navigation from "./_components/Navigation";
 
 export default function Home() {
   return ( 
