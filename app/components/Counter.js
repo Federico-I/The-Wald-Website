@@ -13,5 +13,5 @@ export default function Counter({ users }) {
             <button onClick={ () => setCount((c) => c + 1) }>
               {count}
             </button>  
-  </div>
+          </div>
 };
