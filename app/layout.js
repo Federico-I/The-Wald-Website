@@ -1,6 +1,7 @@
 import react from "react";
 import Navigation from "@/app/_components/Navigation";
 import Logo from "@/app/_components/Logo";
+import "@/app/_styles/globals.css";
 
 export const metadata = {
   title: "The Wald",
