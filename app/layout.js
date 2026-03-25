@@ -1,6 +1,6 @@
 import react from "react";
-import Navigation from "./_components/Navigation";
-import Logo from "./_components/Logo";
+import Navigation from "@/app/_components/Navigation";
+import Logo from "@/app/_components/Logo";
 
 export const metadata = {
   title: "The Wald",

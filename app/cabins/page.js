@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigation from '../_components/Navigation';
-import Counter from '../_components/Counter';
+import Navigation from '@/app/_components/Navigation';
+import Counter from '@/app/_components/Counter';
 
 export default async function page() {
   const res = await fetch("example.com");
