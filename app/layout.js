@@ -9,7 +9,8 @@ export const metadata = {
     template: {
       template: "The Wald",
       default: "Welcome / The Wild Oasis",
-    }
+    },
+    description: "Greatest cabins for a meaningful holidays where you can cut off from the city life and to connect with yourself.",
   }
 };
 
