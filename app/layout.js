@@ -1,7 +1,13 @@
 import react from "react";
 import Navigation from "@/app/_components/Navigation";
 import Logo from "@/app/_components/Logo";
+import { Josefin_Sans } from "next/font/google";
 import "@/app/_styles/globals.css";
+
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   // title: "The Wald",
