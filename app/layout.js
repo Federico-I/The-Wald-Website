@@ -4,7 +4,13 @@ import Logo from "@/app/_components/Logo";
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-  title: "The Wald",
+  // title: "The Wald",
+  title: {
+    template: {
+      template: "The Wald",
+      default: "Welcome / The Wild Oasis",
+    }
+  }
 };
 
 export default function RootLayout({ children }) {
