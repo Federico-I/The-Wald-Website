@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return <html> 
-    <body className="bg-blue-950 text-primary-100 min-h-screen">
+    <body className={`${josefin.className} bg-blue-950 text-primary-100 min-h-screen`}>
       <header>
         <Logo />
         <Navigation />
