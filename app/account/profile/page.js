@@ -1,3 +1,4 @@
+import react from "react";
 import SelectCountry from "@/app/_components/SelectCountry";
 
 export default function Page() {

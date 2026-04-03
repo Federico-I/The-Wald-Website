@@ -1,3 +1,4 @@
+import react from "react";
 import ReservationCard from "./ReservationCard";
 
 export default function Page() {
