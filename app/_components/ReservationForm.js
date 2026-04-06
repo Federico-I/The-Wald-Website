@@ -1,3 +1,4 @@
+import react from "react";
 function ReservationForm() {
   // CHANGE
   const maxCapacity = 23;
