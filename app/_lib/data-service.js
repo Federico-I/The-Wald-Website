@@ -1,4 +1,6 @@
+import react from 'react';
 import { eachDayOfInterval } from 'date-fns';
+import { supabase } from './supabase';
 
 /////////////
 // GET
