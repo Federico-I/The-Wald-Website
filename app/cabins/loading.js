@@ -2,5 +2,8 @@ import React from "react";
 import Spinner from "@/app/_components/Spinner";
 
 export default function Loading () {
-  return <Spinner />;
+  return (
+    <div className="grid items-center justify-center">
+      <Spinner />
+    </div>);
 };
