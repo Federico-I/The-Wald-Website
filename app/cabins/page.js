@@ -1,14 +1,11 @@
-import React from 'react';
-import CabinCard from "@/app/_components/CabinCard";
-import { getCabins } from '../_lib/data-service';
+import react from 'react';
+import CabinList from '../_components/CabinList';
 
 export const metadata = {
   title: "Cabins",
 };
 
 export default async function Page() {
-  // CHANGE
-  const cabins = await getCabins();
 
   return (
     <div>
@@ -25,7 +22,7 @@ export default async function Page() {
       </p>
 
       {cabins.length > 0 && (
-        
+        <CabinList />
       )}
     </div>
   );
