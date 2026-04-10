@@ -1,11 +1,12 @@
-import react from 'react';
+import react, { Suspense } from 'react';
 import CabinList from '../_components/CabinList';
+import Spinner from '../_components/Spinner';
 
 export const metadata = {
   title: "Cabins",
 };
 
-export default async function Page() {
+export default function Page() {
 
   return (
     <div>
@@ -21,9 +22,9 @@ export default async function Page() {
         to paradise.
       </p>
 
-      {cabins.length > 0 && (
+      <Suspense fallback={<Spinner />}>
         <CabinList />
-      )}
+      </Suspense>
     </div>
   );
 }
