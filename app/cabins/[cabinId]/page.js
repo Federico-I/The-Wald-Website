@@ -1,5 +1,6 @@
 import react from "react";
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
+import { getCabin } from "@/app/_lib/data-service";
 
 // PLACEHOLDER DATA
 const cabin = {
@@ -14,7 +15,10 @@ const cabin = {
     "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg",
 };
 
-export default function Page() {
+export default async function Page({ params }) {
+
+  const cabin = await getCabin();
+
   const { id, name, maxCapacity, regularPrice, discount, image, description } =
     cabin;
 
