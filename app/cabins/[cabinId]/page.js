@@ -27,6 +27,8 @@ export async function generateStaticParams() {
   const ids = cabins.map((cabin) => ({
     cabinId: cabin.id,
   }));
+
+  return ids;
 }
 
 export default async function Page({ params }) {
