@@ -1,3 +1,4 @@
+import react from 'react';
 import { useState } from 'react';
 
 function TextExpander({ children }) {
