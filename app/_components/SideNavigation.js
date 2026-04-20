@@ -1,3 +1,4 @@
+"useClient"
 import react from 'react';
 import {
   CalendarDaysIcon,
