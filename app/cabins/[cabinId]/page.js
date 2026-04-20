@@ -6,6 +6,7 @@ import Image from "next/image";
 import TextExpander from "@/app/_components/TextExpander";
 
 // PLACEHOLDER DATA
+
 {/*const cabin = {
   id: 89,
   name: "001",
