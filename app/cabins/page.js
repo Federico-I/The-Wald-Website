@@ -25,7 +25,7 @@ export default function Page({ searchParams }) {
       </p>
 
       <Suspense fallback={<Spinner />}>
-        <CabinList />
+        <CabinList filter={filter} />
       </Suspense>
     </div>
   );
