@@ -25,7 +25,7 @@ export default function Page({ searchParams }) {
         to paradise.
       </p>
 
-      <div className='flex justify-ed mb-8'>
+      <div className='flex justify-end mb-8'>
         <Filter />
       </div>
 
