@@ -10,6 +10,8 @@ function Filter() {
   const router = useRouter();
   const pathname = usePathname();
 
+  const activeFilter = searchParams.get("capacity") ?? "all"
+
   function handleFilter(filter) {
     // web api urlSearchParams
     const params = new URLSearchParams(searchParams);
