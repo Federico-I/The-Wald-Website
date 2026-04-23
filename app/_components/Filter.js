@@ -30,11 +30,17 @@ function Filter() {
       <button className='px-5 py-2 hover:bg-primary-700'  onClick={() => handleFilter("medium")}>
       4&mdash;7 guests
       </button>
-      <button className='px-5 py-2 hover:bg-primary-700'  onClick={() => handleFilter("large")}>
-      8&mdash;12 guests
-      </button>
+      <Button filter="large" handleFilter={handleFilter} activeFilter={activeFilter}>
+        8&mdash;12 guests
+      </Button>
     </div>
   )
 };
+
+function Button({ filter, handleFilter, activeFilter }) {
+  <button className='px-5 py-2 hover:bg-primary-700'  onClick={() => handleFilter("large")}>
+    8&mdash;12 guests
+  </button>;
+}
 
 export default Filter;
