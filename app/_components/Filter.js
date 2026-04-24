@@ -21,21 +21,12 @@ function Filter() {
 
   return (
     <div className='border border-primary-800 flex'>
-      <button className='px-5 py-2 hover:bg-primary-700' onClick={() => handleFilter("all")}>
-      All Cabins
-      </button>
       <Button filter="all" handleFilter={handleFilter} activeFilter={activeFilter}>
         All Cabins
       </Button>
-      <button className='px-5 py-2 hover:bg-primary-700' onClick={() => handleFilter("small")}>
-      
-      </button>
       <Button filter="small" handleFilter={handleFilter} activeFilter={activeFilter}>
         1&mdash;3 guests
       </Button>
-      <button className='px-5 py-2 hover:bg-primary-700'  onClick={() => handleFilter("medium")}>
-      
-      </button>
       <Button filter="medium" handleFilter={handleFilter} activeFilter={activeFilter}>
         4&mdash;7 guests
       </Button>
