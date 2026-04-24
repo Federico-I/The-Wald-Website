@@ -37,9 +37,9 @@ function Filter() {
   )
 };
 
-function Button({ filter, handleFilter, activeFilter }) {
-  <button className='px-5 py-2 hover:bg-primary-700'  onClick={() => handleFilter("large")}>
-    8&mdash;12 guests
+function Button({ filter, handleFilter, activeFilter, children }) {
+  <button className={`px-5 py-2 hover:bg-primary-700 ${filter === activeFilter ? "bg-primary-700 text-primary-50" : ""}`}  onClick={() => handleFilter(filter)}>
+    {children}
   </button>;
 }
 
