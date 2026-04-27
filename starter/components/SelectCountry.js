@@ -1,3 +1,5 @@
+"use server"
+import react from 'react';
 import { getCountries } from '@/app/_lib/data-service';
 
 // Let's imagine your colleague already built this component 😃

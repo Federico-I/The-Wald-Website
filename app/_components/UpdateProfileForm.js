@@ -1,9 +1,16 @@
+"use client";
+
 import React from 'react';
 import SelectCountry from '@/starter/components/SelectCountry';
 import Image from 'next/image';
 
 
 function UpdateProfileForm() {
+  const [count, setCount] = useState();
+
+  const countryFlag = "pt.jpg";
+  const nationality = "portugal";
+
   return (
     <form className="bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col">
         <div className="space-y-2">
