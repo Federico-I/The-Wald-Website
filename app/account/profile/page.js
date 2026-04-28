@@ -22,7 +22,9 @@ export default function Page() {
         faster and smoother. See you soon!
       </p>
 
-      <UpdateProfileForm />
+      <UpdateProfileForm>
+        <SelectCountry />
+      </UpdateProfileForm>
     </div>
   );
 }
