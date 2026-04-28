@@ -1,11 +1,9 @@
 "use client";
 
-import React from 'react';
-import SelectCountry from '@/starter/components/SelectCountry';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
-
-function UpdateProfileForm() {
+function UpdateProfileForm({ children }) {
   const [count, setCount] = useState();
 
   const countryFlag = "pt.jpg";
@@ -38,6 +36,7 @@ function UpdateProfileForm() {
               className="h-5 rounded-sm"
             />
           </div>
+          {children}
         </div>
 
         <div className="space-y-2">
