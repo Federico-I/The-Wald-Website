@@ -1,3 +1,6 @@
+"use client"
+
+import react from "react";
 import { isWithinInterval } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
