@@ -1,7 +1,7 @@
 "use Client"
 import react from "react";
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
-import { getCabin, getCabins } from "@/app/_lib/data-service";
+import { getBookedDatesByCabinId, getCabin, getCabins } from "@/app/_lib/data-service";
 import Image from "next/image";
 import TextExpander from "@/app/_components/TextExpander";
 import DateSelector from "@/app/_components/DateSelector";
@@ -39,6 +39,9 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
 
   const cabin = await getCabin(params.cabinId);
+
+  const settings = await getSettings();
+  const bookedDates = await getBookedDatesByCabinId();
 
   const { id, name, maxCapacity, regularPrice, discount, image, description } =
     cabin;
@@ -87,7 +90,7 @@ export default async function Page({ params }) {
       </div>
 
       <div>
-        <h2 className="text-5xl font-semibold text-center">
+        <h2 className="text-5xl font-semibold text-center mb-10 text-accent-400">
           Reserve {name} today. Pay on arrival.
         </h2>
         <div className="grid grid-cols-2 border border-primary-800 min-h-[400px]">
