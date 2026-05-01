@@ -1,10 +1,11 @@
 "use Client"
-import react from "react";
+import react, { Suspense } from "react";
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { getBookedDatesByCabinId, getCabin, getCabins, getSettings } from "@/app/_lib/data-service";
 import Image from "next/image";
 import TextExpander from "@/app/_components/TextExpander";
 import Reservation from "@/app/_components/Reservation";
+import Spinner from "@/app/_components/Spinner";
 
 // PLACEHOLDER DATA
 
@@ -38,8 +39,6 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
 
   const cabin = await getCabin(params.cabinId);
-  // const settings = await getSettings();
-  // const bookedDates = await getBookedDatesByCabinId();
 
   const { id, name, maxCapacity, regularPrice, discount, image, description } =
     cabin;
@@ -91,7 +90,9 @@ export default async function Page({ params }) {
         <h2 className="text-5xl font-semibold text-center mb-10 text-accent-400">
           Reserve {name} today. Pay on arrival.
         </h2>
-        <Reservation />
+        <Suspense fallback={<Spinner/>}>
+          <Reservation cabin={cabin}/>
+        </Suspense>
       </div>
     </div>
   );
