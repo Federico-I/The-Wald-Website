@@ -1,6 +1,6 @@
 import react from "react";
 
-function ReservationForm() {
+function ReservationForm({ cabin }) {
   // CHANGE
   const maxCapacity = 23;
 
