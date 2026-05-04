@@ -15,7 +15,8 @@ function isAlreadyBooked(range, datesArr) {
   );
 }
 
-function DateSelector() {
+function DateSelector({ settings, cabin, bookedDates }) {
+
   // CHANGE
   const regularPrice = 23;
   const discount = 23;
