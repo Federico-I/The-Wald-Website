@@ -1,9 +1,6 @@
 "use Client"
 import react, { Suspense } from "react";
-import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
-import { getBookedDatesByCabinId, getCabin, getCabins, getSettings } from "@/app/_lib/data-service";
-import Image from "next/image";
-import TextExpander from "@/app/_components/TextExpander";
+import { getCabin, getCabins } from "@/app/_lib/data-service";
 import Reservation from "@/app/_components/Reservation";
 import Spinner from "@/app/_components/Spinner";
 import { Cabin } from "next/font/google";
