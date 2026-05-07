@@ -21,4 +21,4 @@ function useReservation() {
   if(context === undefined) throw new Error ("Context was outside provider");
 }
 
-export default ReservationProvider;
+export default ( ReservationProvider, useReservation );
