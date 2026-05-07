@@ -7,10 +7,12 @@ const ReservationContext = createContext();
 const initialState = { from: undefined, to: undefined };
 
 function ReservationProvider() {
-  const [range, setRagnge] = useState(initialState);
+  const [range, setRange] = useState(initialState);
+
+  const resetRange = () => setRange(initialState);
 
   return (
-    <ReservationContext.Provider value={{ range, setRagnge }}>
+    <ReservationContext.Provider value={{ range, setRange, resetRange }}>
       {children}
     </ReservationContext.Provider>
   );
@@ -21,4 +23,4 @@ function useReservation() {
   if(context === undefined) throw new Error ("Context was outside provider");
 }
 
-export default ( ReservationProvider, useReservation );
+export { ReservationProvider, useReservation };
