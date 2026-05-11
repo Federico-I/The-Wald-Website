@@ -4,6 +4,7 @@ import { getCabin, getCabins } from "@/app/_lib/data-service";
 import Reservation from "@/app/_components/Reservation";
 import Spinner from "@/app/_components/Spinner";
 import { Cabin } from "next/font/google";
+import ReservationReminder from "@/app/_components/ReservationReminder";
 
 // PLACEHOLDER DATA
 
@@ -47,6 +48,7 @@ export default async function Page({ params }) {
         </h2>
         <Suspense fallback={<Spinner />}>
           <Reservation cabin={cabin} />
+          <ReservationReminder />
         </Suspense>
       </div>
     </div>
