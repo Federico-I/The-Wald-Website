@@ -9,6 +9,7 @@ export async function GET( request, { params }) {
   try {
     const [cabin, bookedDates] = await Promise.all([ getCabin(cabinId), getBookedDatesByCabinId(cabinId)])
   } catch {
+    
     return Response.json({ message: "Cabin not found" });
   };
 };
