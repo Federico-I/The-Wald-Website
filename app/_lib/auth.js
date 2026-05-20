@@ -11,4 +11,4 @@ const authConfig = {
   ],
 };
 
-export const { auth, handlers } = NextAuth(authConfig);
+export const { auth, handlers: { GET, POST } } = NextAuth(authConfig);
