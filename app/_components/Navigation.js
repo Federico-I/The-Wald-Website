@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { auth } from "../_lib/auth";
+import Image from "next/image";
 
 export default async function Navigation() {
   const session = await auth();
@@ -19,12 +20,18 @@ export default async function Navigation() {
           </Link>
         </li>
         <li>
-          <Link
+          {session?.user?.image ? (<Link
+            href="/account"
+            className="hover:text-accent-400 transition-colors"
+          >
+            <Image src={session.user.image}/>
+            <span>Guest area</span>
+          </Link>) : (<Link
             href="/account"
             className="hover:text-accent-400 transition-colors"
           >
             Guest area
-          </Link>
+          </Link>)}
         </li>
       </ul>
     </nav>
