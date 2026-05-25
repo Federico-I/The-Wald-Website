@@ -1,3 +1,5 @@
+import React from "react";
+
 function LoginMessage() {
   return (
     <div className='grid bg-primary-800 '>
