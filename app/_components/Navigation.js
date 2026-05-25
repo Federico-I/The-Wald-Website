@@ -15,7 +15,7 @@ export default async function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-accent-400 transition-colors">
+          <Link href="/about" className="hover:text-accent-400 transition-colors flex items-center gap-4">
             About
           </Link>
         </li>
