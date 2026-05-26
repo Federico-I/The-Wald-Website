@@ -1,10 +1,10 @@
 import react from "react";
 import { useReservation } from "./ReservationContext";
+import Image from "next/image";
 
-function ReservationForm({ cabin }) {
+function ReservationForm({ cabin, user }) {
 
   const { range } = useReservation();
-
   const { maxCapacity } = cabin;
 
   return (
@@ -12,8 +12,8 @@ function ReservationForm({ cabin }) {
       <div className='bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center'>
         <p>Logged in as</p>
 
-        {/* <div className='flex gap-4 items-center'>
-          <img
+        <div className='flex gap-4 items-center'>
+          <Image
             // Important to display google profile images
             referrerPolicy='no-referrer'
             className='h-8 rounded-full'
@@ -22,7 +22,7 @@ function ReservationForm({ cabin }) {
           />
 
           <p>{user.name}</p>
-        </div> */}
+        </div>
       </div>
 
       <p>
