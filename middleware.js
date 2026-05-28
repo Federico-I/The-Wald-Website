@@ -7,5 +7,5 @@ export function middleware( request ) {
 }
 
 export const config = {
-  matcher: ["/account"],
+  matcher: ["/account", "/cabins"],
 };
